@@ -1,0 +1,16 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/tradefeedr/integrations
+- https://n8n.io/integrations/tradefeedr/
+- https://composio.dev/toolkits/tradefeedr
+- https://monid.ai/tools/tradefeedr
+checked:
+- https://composio.dev/toolkits/tradefeedr
+- https://monid.ai/tools/tradefeedr
+- https://n8n.io/integrations/tradefeedr/
+- https://zapier.com/apps/tradefeedr/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

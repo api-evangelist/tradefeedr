@@ -1,0 +1,66 @@
+generated: '2026-10-21'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 4
+  own: 4
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - docs
+  - other
+  - website
+hosts:
+- host: api.tradefeedr.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: tradefeedr.com
+  role: api
+  relation: own
+- host: platform.tradefeedr.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: tradefeedr.com
+  role: other
+  relation: own
+- host: tradefeedr.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: tradefeedr.com
+  role: website
+  relation: own
+- host: www.tradefeedr.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Documentation
+  - APIReference
+  - Blog
+  - PrivacyPolicy
+  - TermsOfService
+  serves: []
+  registrable_domain: tradefeedr.com
+  role: docs
+  relation: own
